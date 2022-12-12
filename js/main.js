@@ -25,7 +25,7 @@ const comprarProductos = (listaDeProductos) => {
 
     do {
         productoNombre = prompt('Que producto desea comprar'+'\n\n'+listaDeProductos.join('\n'));
-        productoCantidad = parseInt(prompt('¿Cuántos queres comprar?'));
+        productoCantidad = parseInt(prompt('Ingrese cantidad'));
 
         const producto = productos.find(producto => producto.nombre.toLowerCase() === productoNombre.toLowerCase());
 
