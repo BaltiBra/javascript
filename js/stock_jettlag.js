@@ -62,7 +62,7 @@ const productos =
 
     {
         id: 7,
-        nombre: "Remera de los campos",
+        nombre: "Remera de la seleccion",
         tipo: "remera",
         descripcion: "Remera especial de la seleccion",
         precio: 5500,

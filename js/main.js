@@ -24,7 +24,7 @@ const comprarProductos = (listaDeProductos) => {
     let productoCantidad = 0;
 
     do {
-        productoNombre = prompt('Que producto desea comprar'+'\n\n'+listaDeProductos.join('\n'));
+        productoNombre = prompt('Escribir el nombre de lo que quiere comprar'+'\n\n'+listaDeProductos.join('\n'));
         productoCantidad = parseInt(prompt('Ingrese cantidad'));
 
         const producto = productos.find(producto => producto.nombre.toLowerCase() === productoNombre.toLowerCase());
@@ -32,7 +32,7 @@ const comprarProductos = (listaDeProductos) => {
         if (producto) {
             agregarAlCarrito(producto, producto.id, productoCantidad);
         } else {
-            alert('El producto no se encuentra en el catálogo!');
+            alert('Lo que escribiste es invalido');
         }
 
         seguirComprando = confirm('¿Desea agregar otro producto?')
@@ -52,18 +52,6 @@ const agregarAlCarrito = (producto, productoId, productoCantidad) => {
     console.log(carrito)
 };
 
-const eliminarProductoCarrito = (productoNombre) => {
-    carrito.forEach((producto, index) => {
-        if (producto.nombre.toLowerCase() === productoNombre) {
-            if (producto.cantidad > 1) {
-                producto.cantidad--
-            } else {
-                carrito.splice(index, 1)
-            }
-        }
-    })
-    confirmarCompra()
-};
 
 const confirmarCompra = () => {
     const listaProductos = carrito.map(producto => {
@@ -72,16 +60,13 @@ const confirmarCompra = () => {
 
     const confirmar = confirm('Checkout: '
         +'\n\n'+listaProductos.join('\n')
-        +'\n\nPara continuar precione "Aceptar" sino "Cancelar" para eliminar productos del carrito.'
+        +'\n\nPara continuar precione "Aceptar" '
     );
 
     if (confirmar) {
         finalizarCompra(listaProductos);
-    } else {
-        const productoAEliminar = prompt('Ingrese el nombre del producto a eliminar:');
-        eliminarProductoCarrito(productoAEliminar);
     }
-};
+}
 
 const finalizarCompra = (listaProductos) => {
     const cantidadTotal = carrito.reduce((acc, elemento) => acc + elemento.cantidad, 0);
