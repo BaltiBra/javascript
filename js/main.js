@@ -52,6 +52,18 @@ const agregarAlCarrito = (producto, productoId, productoCantidad) => {
     console.log(carrito)
 };
 
+const eliminarProducto = (productoNombre) => {
+    carrito.forEach((producto, index) => {
+        if (producto.nombre.toLowerCase() === productoNombre) {
+            if (producto.cantidad > 1) {
+                producto.cantidad--
+            } else {
+                carrito.splice(index, 1)
+            }
+        }
+    })
+    confirmarCompra()
+}
 
 const confirmarCompra = () => {
     const listaProductos = carrito.map(producto => {
@@ -60,11 +72,14 @@ const confirmarCompra = () => {
 
     const confirmar = confirm('Checkout: '
         +'\n\n'+listaProductos.join('\n')
-        +'\n\nPara continuar precione "Aceptar" '
+        +'\n\nPara continuar precione "Aceptar" o para eliminar un producto presione cancelar'
     );
 
     if (confirmar) {
         finalizarCompra(listaProductos);
+    } else {
+        const productoAEliminar = prompt('Ingrese el nombre del producto a eliminar:');
+        eliminarProducto(productoAEliminar);
     }
 }
 
