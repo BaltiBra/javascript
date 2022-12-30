@@ -6,7 +6,8 @@ const productos =
         tipo: "mangas",
         descripcion: "Un manga tipo shonen",
         precio: 1000,
-        // talle: "L",
+        talle: "L",
+        img: './img/1.jpg',
         cantidad:0
     },
 
@@ -16,7 +17,8 @@ const productos =
         tipo: "mangas",
         descripcion: "El manga mas conocido",
         precio: 1200,
-        // talle: "L",
+        talle: "L",
+        img: './img/7.jpg',
         cantidad:0
     },
 
@@ -26,7 +28,8 @@ const productos =
         tipo: "mangas",
         descripcion: "Un manga de shonen",
         precio: 1100,
-        // talle: "S",
+        img: './img/8.jpg',
+        talle: "S",
         cantidad:0
     },
 
@@ -36,7 +39,8 @@ const productos =
         tipo: "comics",
         descripcion: "Comic de los Avengers vol 1",
         precio: 4000,
-        // talle: 42,
+        img: './img/9.jpg',
+        talle: 42,
         cantidad:0
     },
 
@@ -46,7 +50,8 @@ const productos =
         tipo: "comics",
         descripcion: "Comic de los Avengers vol 2",
         precio: 4000,
-        // talle: 4,
+        img: './img/10.jpg',
+        talle: 4,
         cantidad:0
     },
 
@@ -56,6 +61,7 @@ const productos =
         tipo: "remera",
         descripcion: "Una remera que re va",
         precio: 5000,
+        img: './img/seleccion2.jpg',
         talle: "S",
         cantidad:0
     },
@@ -66,6 +72,7 @@ const productos =
         tipo: "remera",
         descripcion: "Remera especial de la seleccion",
         precio: 5500,
+        img: './img/spyxf1.jpg',
         talle: "M",
         cantidad:0
     }
