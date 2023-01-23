@@ -1,126 +1,126 @@
-// const stockProductos = [
-//   {
-//       id: 1,
-//       nombre: "Manga Ninjen Shikkaku",
-//       tipo: "mangas",
-//       descripcion: "Manga NS tomo 1",
-//       precio: 1000,
-//       img: './img/1.jpg',
-//       cantidad:1
-//   },
+const stockProductos = [
+  {
+      id: 1,
+      nombre: "Manga Ninjen Shikkaku",
+      tipo: "mangas",
+      descripcion: "Manga NS tomo 1",
+      precio: 1000,
+      img: './img/1.jpg',
+      cantidad:1
+  },
 
-//   {
-//       id: 2,
-//       nombre: "Manga Dragon Ball Z",
-//       tipo: "mangas",
-//       descripcion: "El manga mas conocido",
-//       precio: 1200,
-//       img: './img/7.jpg',
-//       cantidad:1
-//   },
+  {
+      id: 2,
+      nombre: "Manga Dragon Ball Z",
+      tipo: "mangas",
+      descripcion: "El manga mas conocido",
+      precio: 1200,
+      img: './img/7.jpg',
+      cantidad:1
+  },
 
-//   {
-//       id: 3,
-//       nombre: "Manga Vampeerz",
-//       tipo: "mangas",
-//       descripcion: "Vampeerz toma 1 al 2",
-//       precio: 1100,
-//       img: './img/8.jpg',
-//       cantidad:1
-//   },
+  {
+      id: 3,
+      nombre: "Manga Vampeerz",
+      tipo: "mangas",
+      descripcion: "Vampeerz toma 1 al 2",
+      precio: 1100,
+      img: './img/8.jpg',
+      cantidad:1
+  },
 
-//   {
-//       id: 4,
-//       nombre: "Manga Shuumatsu no valkyrie",
-//       tipo: "mangas",
-//       descripcion: "Tomo 1 al 14",
-//       precio: 1200,
-//       img: './img/9.jpg',
-//       cantidad:1
-//   },
+  {
+      id: 4,
+      nombre: "Manga Shuumatsu no valkyrie",
+      tipo: "mangas",
+      descripcion: "Tomo 1 al 14",
+      precio: 1200,
+      img: './img/9.jpg',
+      cantidad:1
+  },
 
-//   {
-//       id: 5,
-//       nombre: "Ranking Kings",
-//       tipo: "mangas",
-//       descripcion: "Tomo 1 al 3",
-//       precio: 1200,
-//       img: './img/10.jpg',
-//       cantidad:1
-//   },
+  {
+      id: 5,
+      nombre: "Ranking Kings",
+      tipo: "mangas",
+      descripcion: "Tomo 1 al 3",
+      precio: 1200,
+      img: './img/10.jpg',
+      cantidad:1
+  },
 
-//   {
-//       id: 6,
-//       nombre: "Remera de la seleccion",
-//       tipo: "remera",
-//       descripcion: "La remera de messi paa",
-//       precio: 5000,
-//       img: './img/seleccion2.jpg',
-//       cantidad:1
-//   },
+  {
+      id: 6,
+      nombre: "Remera de la seleccion",
+      tipo: "remera",
+      descripcion: "La remera de messi paa",
+      precio: 5000,
+      img: './img/seleccion2.jpg',
+      cantidad:1
+  },
 
-//   {
-//       id: 7,
-//       nombre: "Remera del manga Spy X Family",
-//       tipo: "remera",
-//       descripcion: "Remera edicion especial de Spy",
-//       precio: 5500,
-//       img: './img/spyxf1.jpg',
-//       cantidad:1
-//   },
+  {
+      id: 7,
+      nombre: "Remera del manga Spy X Family",
+      tipo: "remera",
+      descripcion: "Remera edicion especial de Spy",
+      precio: 5500,
+      img: './img/spyxf1.jpg',
+      cantidad:1
+  },
 
-//   {
-//       id: 8,
-//       nombre: "Aritos",
-//       tipo: "Merchandaising",
-//       descripcion: "Aritos de diferentes mangas",
-//       precio: 1000,
-//       img: './img/aritos.jpg',
-//       cantidad:1
-//   },
+  {
+      id: 8,
+      nombre: "Aritos",
+      tipo: "Merchandaising",
+      descripcion: "Aritos de diferentes mangas",
+      precio: 1000,
+      img: './img/aritos.jpg',
+      cantidad:1
+  },
 
-//   {
-//       id: 9,
-//       nombre: "Figuras",
-//       tipo: "Merchandaising",
-//       descripcion: "Figuras de anime y comics",
-//       precio: 3500,
-//       img: './img/figuras.jpg',
-//       cantidad:1
-//   },
+  {
+      id: 9,
+      nombre: "Figuras",
+      tipo: "Merchandaising",
+      descripcion: "Figuras de anime y comics",
+      precio: 3500,
+      img: './img/figuras.jpg',
+      cantidad:1
+  },
 
-//   {
-//       id: 10,
-//       nombre: "Gorras",
-//       tipo: "Merchandaising",
-//       descripcion: "Gorras baratas",
-//       precio: 1500,
-//       img: './img/gorras.jpg',
-//       cantidad:1
-//   },
+  {
+      id: 10,
+      nombre: "Gorras",
+      tipo: "Merchandaising",
+      descripcion: "Gorras baratas",
+      precio: 1500,
+      img: './img/gorras.jpg',
+      cantidad:1
+  },
 
-//   {
-//       id: 11,
-//       nombre: "Llaveros",
-//       tipo: "Merchandaising",
-//       descripcion: "Llaveros animes y ediciones coleccionistas",
-//       precio: 1300,
-//       img: './img/llavero.jpg',
-//       cantidad:1
-//   },
+  {
+      id: 11,
+      nombre: "Llaveros",
+      tipo: "Merchandaising",
+      descripcion: "Llaveros animes y ediciones coleccionistas",
+      precio: 1300,
+      img: './img/llavero.jpg',
+      cantidad:1
+  },
 
-//   {
-//       id: 12,
-//       nombre: "Funko pop",
-//       tipo: "Merchandaising",
-//       descripcion: "Funko Pop solamente de animes",
-//       precio: 3400,
-//       img: './img/madara.jpg',
-//       cantidad:1
-//   },
+  {
+      id: 12,
+      nombre: "Funko pop",
+      tipo: "Merchandaising",
+      descripcion: "Funko Pop solamente de animes",
+      precio: 3400,
+      img: './img/madara.jpg',
+      cantidad:1
+  },
 
-//   ,
-// ];
+  ,
+];
 
 
 let carrito = [];
@@ -208,7 +208,29 @@ const obtenerStock = async () => {
     const resp = await fetch('/stock.json')
     const stockProductos = await resp.json()
 
-    console.log(stockProductos)
+    stockProductos.forEach ((prod) => {
+      const { id, nombre, precio, descripcion, img, cantidad } = prod;
+      if (contenedor) {
+        contenedor.innerHTML += 
+        
+        `                     <div class="item-container">
+                              <div class="main-item">
+                                  <img src=${img}>
+                              </div>
+                              <h2 class="item-heading">
+                                  ${nombre}
+                              </h2>
+                              <p class="item-description">
+                                    ${descripcion}
+                                    Cantidad: ${cantidad}
+                              </p>
+                              <p class="item-price">$${precio}</p>
+                              <a class="footer-anchor" ><button class="item-cart-btn agregar" onclick="agregarProducto(${id})">Encarga! </button></a>
+                              </div>
+                            
+                            `;
+      }
+    });
 }
 
 obtenerStock()
@@ -347,10 +369,6 @@ function procesarPedido() {
  } else {
 
   const btn = document.getElementById('button');
-
-// document.getElementById('procesar-pago')
-//  .addEventListener('submit', function(event) {
-//    event.preventDefault();
 
    btn.value = 'Enviando...';
 
